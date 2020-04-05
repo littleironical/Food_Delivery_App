@@ -10,28 +10,40 @@ class DetailsPage extends StatelessWidget {
       ),
       home: Scaffold(
         body: Container(
-          padding: EdgeInsets.only(top: 70.0),
+          padding: EdgeInsets.only(top: 60.0),
           color: Color(0xFF7A9BEE),
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 25.0, right: 25.0),
+                padding: const EdgeInsets.only(left: 18.0, right: 20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   mainAxisSize: MainAxisSize.max,
                   children: <Widget>[
-                    new Icon(Icons.arrow_back_ios,
-                      color: Colors.white,
-                      size: 24.0,
+                    new IconButton(
+                      icon: Icon(Icons.arrow_back_ios,
+                        color: Colors.white,
+                        size: 24.0,
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).pop(true);
+                      },
                     ),
                     new Text('Details',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
-                        fontWeight: FontWeight.w400,
+                        fontWeight: FontWeight.w500,
                         color: Colors.white,
-                        fontSize: 18.0
+                        fontSize: 20.0
                       ),
-                    )
+                    ),
+                    new IconButton(
+                      icon: Icon(Icons.more_horiz,
+                        color: Colors.white,
+                        size: 24.0
+                      ),
+                      onPressed: () {},
+                    ),
                   ],
                 ),
               )
