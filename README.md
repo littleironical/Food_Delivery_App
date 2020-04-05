@@ -1,16 +1,15 @@
 # ui_challenge
 
-A new Flutter project.
+## I'm going to start doing the UI Challenge. In which i will select a random application UI(not the easy one) and try to make it in my own style. 
 
-## Getting Started
+## UI used
 
-This project is a starting point for a Flutter application.
+https://dribbble.com/shots/6687016-Foody-Food-by-Subscription
 
-A few resources to get you started if this is your first Flutter project:
+## Reference Used
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+https://www.youtube.com/watch?v=K1uH_SN4X0w&t=300s
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Images
+
+Yet to come
