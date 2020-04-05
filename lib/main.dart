@@ -132,10 +132,10 @@ double width, height;
                   child: ListView(
                     children: <Widget>[
                       Padding(padding: EdgeInsets.only(top: 20.0),),
-                      contents('assets/plate2.png', 'Salmon Bowl','\$24.00'),
-                      contents('assets/plate1.png', 'Spring Bowl','\$22.00'),
-                      contents('assets/plate6.png', 'Avocado Bowl','\$26.00'),
-                      contents('assets/plate5.png', 'Berry Bowl','\$19.00'),
+                      Contents(img: 'assets/plate2.png', name: 'Salmon Bowl', price: '\$24.00'),
+                      Contents(img: 'assets/plate1.png', name: 'Spring Bowl', price: '\$22.00'),
+                      Contents(img: 'assets/plate6.png', name: 'Avocado Bowl', price:'\$26.00'),
+                      Contents(img: 'assets/plate5.png', name: 'Berry Bowl', price: '\$19.00'),
                        SizedBox(height: 50.0,),
                        Row(
                          mainAxisAlignment: MainAxisAlignment.center,
