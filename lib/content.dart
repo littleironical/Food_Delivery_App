@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge/DetailsPage.dart';
 
 Widget contents(String img, String name, String price){
 return Padding(
@@ -39,7 +40,12 @@ return Padding(
             ]
           )
         ),
-        Icon(Icons.add),
+        IconButton(
+          icon: Icon(Icons.add),
+          onPressed: () {
+            Navigator.push(context, new MaterialPageRoute(builder: (context) => new DetailsPage() ));
+          },
+        ),
       ],
     ),
   );
