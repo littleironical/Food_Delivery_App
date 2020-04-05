@@ -39,13 +39,13 @@ double width, height;
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
-          padding: EdgeInsets.only(top: 40.0),
+          padding: EdgeInsets.only(top: 70.0),
           color: Color(0xFF21BFBD),
-          alignment: Alignment.center,
+          //alignment: Alignment.center,
           child: Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(left: 25.0, right: 25.0, top: 30.0),
+                padding: const EdgeInsets.only(left: 25.0, right: 25.0),
                 child: new Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   mainAxisSize: MainAxisSize.max,
@@ -72,6 +72,7 @@ double width, height;
                 ),
               ),
               SizedBox(height: 60.0,),
+
               //IN THIS CASE I'M NOT ABLE TO DO THE PROPER ALIGNMENT
               // new RichText(
               //     textAlign: TextAlign.start,
@@ -96,6 +97,7 @@ double width, height;
               //       ]
               //     ),
               //   ),
+              
               new Row(
                 children: <Widget>[
                   Text('     Healthy',
@@ -123,8 +125,8 @@ double width, height;
                 child: new AnimatedContainer(
                   duration: Duration(hours: 1),
                   alignment: Alignment.bottomCenter,
-                  height: height + 185.0,
-                  width: width,
+                  // height: height + 185.0,
+                  // width: width,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0))
