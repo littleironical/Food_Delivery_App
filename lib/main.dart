@@ -23,15 +23,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-double width, height;
-
   @override
   Widget build(BuildContext context) {
-
-    Size size = MediaQuery.of(context).size;
-    width = size.width;
-    height = size.height;
-
     return MaterialApp(
       theme: ThemeData(
         accentColor: Colors.white
@@ -41,7 +34,6 @@ double width, height;
         body: Container(
           padding: EdgeInsets.only(top: 70.0),
           color: Color(0xFF21BFBD),
-          //alignment: Alignment.center,
           child: Column(
             children: <Widget>[
               Padding(
@@ -97,7 +89,7 @@ double width, height;
               //       ]
               //     ),
               //   ),
-              
+
               new Row(
                 children: <Widget>[
                   Text('     Healthy',
@@ -125,8 +117,6 @@ double width, height;
                 child: new AnimatedContainer(
                   duration: Duration(hours: 1),
                   alignment: Alignment.bottomCenter,
-                  // height: height + 185.0,
-                  // width: width,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0))
@@ -138,62 +128,62 @@ double width, height;
                       Contents(img: 'assets/plate1.png', name: 'Spring Bowl', price: '\$22.00'),
                       Contents(img: 'assets/plate6.png', name: 'Avocado Bowl', price:'\$26.00'),
                       Contents(img: 'assets/plate5.png', name: 'Berry Bowl', price: '\$19.00'),
-                       SizedBox(height: 50.0,),
-                       Row(
-                         mainAxisAlignment: MainAxisAlignment.center,
-                         children: <Widget>[
-                           Container(
-                             width: 70.0,
-                             height: 70.0,
-                             decoration: BoxDecoration(
-                               border: Border.all(
-                                 color: Colors.grey,
-                                 style: BorderStyle.solid,
-                                 width: 2.0,
-                               ),
-                               borderRadius: BorderRadius.circular(20.0)
-                             ),
-                             child: Icon(Icons.search,
-                               color: Colors.black,
-                             ),
-                           ), 
-                           SizedBox(width: 10.0),
-                           Container(
-                             width: 70.0,
-                             height: 70.0,
-                             decoration: BoxDecoration(
-                               border: Border.all(
-                                 color: Colors.grey,
-                                 style: BorderStyle.solid,
-                                 width: 2.0,
-                               ),
-                               borderRadius: BorderRadius.circular(20.0)
-                             ),
-                             child: Icon(Icons.shopping_basket,
-                               color: Colors.black,
-                             ),
-                           ), 
-                           SizedBox(width: 10.0),                           
-                           Container(
-                             width: 180.0,
-                             height: 70.0,
-                             decoration: BoxDecoration(
-                               borderRadius: BorderRadius.circular(20.0),
-                               color: Colors.black
-                             ),
-                             child: Center(
-                               child: Text('Checkout',
-                                 textAlign: TextAlign.center,
-                                 style: TextStyle(
-                                  fontFamily: 'Montserrat',
-                                  color: Colors.white,
-                                  fontSize: 15.0,
-                                )
+                      SizedBox(height: 50.0,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Container(
+                            width: 70.0,
+                            height: 70.0,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                                style: BorderStyle.solid,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(20.0)
                             ),
-                             )
-                           ) 
-                         ],
-                       ),
+                            child: Icon(Icons.search,
+                              color: Colors.black,
+                            ),
+                          ), 
+                          SizedBox(width: 10.0),
+                          Container(
+                            width: 70.0,
+                            height: 70.0,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.grey,
+                                style: BorderStyle.solid,
+                                width: 2.0,
+                              ),
+                              borderRadius: BorderRadius.circular(20.0)
+                            ),
+                            child: Icon(Icons.shopping_basket,
+                              color: Colors.black,
+                            ),
+                          ), 
+                          SizedBox(width: 10.0),                           
+                          Container(
+                            width: 180.0,
+                            height: 70.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: Colors.black
+                            ),
+                            child: Center(
+                              child: Text('Checkout',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                 fontFamily: 'Montserrat',
+                                 color: Colors.white,
+                                 fontSize: 15.0,
+                                )
+                              ),
+                            )
+                          ) 
+                        ],
+                      ),
                     ], 
                   ),
                 ),
