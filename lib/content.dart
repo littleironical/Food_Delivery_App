@@ -49,7 +49,7 @@ Contents({this.img, this.name, this.price});
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.push(context, new MaterialPageRoute(builder: (context) => new DetailsPage() ));
+              Navigator.push(context, new MaterialPageRoute(builder: (context) => new DetailsPage(img: img, name: name, price: price,) ));
             },
           ),
         ],

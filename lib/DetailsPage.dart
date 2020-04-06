@@ -39,7 +39,7 @@ DetailsPage({this.img, this.name, this.price});
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.w500,
                         color: Colors.white,
-                        fontSize: 20.0
+                        fontSize: 22.0
                       ),
                     ),
                     new IconButton(
@@ -52,22 +52,31 @@ DetailsPage({this.img, this.name, this.price});
                   ],
                 ),
               ),
+              SizedBox(height: 70.0),
 
               new Expanded(
-                child: new Stack(
-                  fit: StackFit.loose,
+                child: Container(
                   alignment: Alignment.bottomCenter,
-                  overflow: Overflow.clip,
-                  children: <Widget>[
-                    Positioned(
-                      child: Image(
-                        image: AssetImage(img),
-                        fit: BoxFit.cover,
-                        height: 95.0,
-                        width: 95.0
-                      ),
-                    )
-                  ],
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(topLeft: Radius.circular(50.0), topRight: Radius.circular(50.0))
+                  ),
+                  child: new Stack(
+                    fit: StackFit.loose,
+                    alignment: Alignment.bottomCenter,
+                    overflow: Overflow.visible,
+                    children: <Widget>[
+                      Positioned(
+                        bottom: 550.0,
+                        child: Image(
+                          image: AssetImage(img),
+                          fit: BoxFit.cover,
+                          height: 250.0,
+                          width: 250.0
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ), 
             ],
