@@ -91,26 +91,29 @@ class _HomeState extends State<Home> {
               //     ),
               //   ),
 
-              new Row(
-                children: <Widget>[
-                  Text('     Healthy',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 30.0
+              Padding(
+                padding: const EdgeInsets.only(left: 28.0),
+                child: new Row(
+                  children: <Widget>[
+                    Text('Healthy',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        fontSize: 30.0
+                      )
+                    ),
+                    SizedBox(width: 10.0),
+                    Text('Food',
+                      style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white,
+                        fontSize: 30.0
+                      )
                     )
-                  ),
-                  SizedBox(width: 10.0),
-                  Text('Food',
-                    style: TextStyle(
-                      fontFamily: 'Montserrat',
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white,
-                      fontSize: 30.0
-                    )
-                  )
-                ],
+                  ],
+                ),
               ),
               SizedBox(height: 60.0,),
 
@@ -119,17 +122,17 @@ class _HomeState extends State<Home> {
                   duration: Duration(hours: 1),
                   alignment: Alignment.bottomCenter,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.white, 
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0))
                   ),
                   child: ListView(
                     children: <Widget>[
-                      Padding(padding: EdgeInsets.only(top: 20.0),),
+                      Padding(padding: EdgeInsets.only(top: 10.0),),
                       Contents(img: 'assets/plate2.png', name: 'Salmon Bowl', price: '\$24.00'),
                       Contents(img: 'assets/plate1.png', name: 'Spring Bowl', price: '\$22.00'),
                       Contents(img: 'assets/plate6.png', name: 'Avocado Bowl', price:'\$26.00'),
                       Contents(img: 'assets/plate5.png', name: 'Berry Bowl', price: '\$19.00'),
-                      SizedBox(height: 50.0,),
+                      SizedBox(height: 60.0,),
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,

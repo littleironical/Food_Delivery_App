@@ -22,14 +22,14 @@ Contents({this.img, this.name, this.price});
                   height: 95.0,
                   width: 95.0
                 ),
-                SizedBox(width: 20.0),
+                SizedBox(width: 14.0),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:[
                     Text(name,
                       style: TextStyle(
                         fontFamily: 'Montserrat',
-                        fontSize: 17.0,
+                        fontSize: 20.0,
                         fontWeight: FontWeight.bold
                       )
                     ),
@@ -37,7 +37,7 @@ Contents({this.img, this.name, this.price});
                     Text(price,
                       style: TextStyle(
                         fontFamily: 'Montserrat',
-                        fontSize: 15.0,
+                        fontSize: 18.0,
                         color: Colors.grey
                       )
                     )
