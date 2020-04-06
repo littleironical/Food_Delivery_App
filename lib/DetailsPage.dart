@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatelessWidget {
+DetailsPage({this.img, this.name, this.price});
+  final img;
+  final name;
+  final price;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -46,7 +51,25 @@ class DetailsPage extends StatelessWidget {
                     ),
                   ],
                 ),
-              )
+              ),
+
+              new Expanded(
+                child: new Stack(
+                  fit: StackFit.loose,
+                  alignment: Alignment.bottomCenter,
+                  overflow: Overflow.clip,
+                  children: <Widget>[
+                    Positioned(
+                      child: Image(
+                        image: AssetImage(img),
+                        fit: BoxFit.cover,
+                        height: 95.0,
+                        width: 95.0
+                      ),
+                    )
+                  ],
+                ),
+              ), 
             ],
           ),
         ),

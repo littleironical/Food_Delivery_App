@@ -66,6 +66,7 @@ class _HomeState extends State<Home> {
               SizedBox(height: 60.0,),
 
               //IN THIS CASE I'M NOT ABLE TO DO THE PROPER ALIGNMENT
+
               // new RichText(
               //     textAlign: TextAlign.start,
               //     text: TextSpan(
@@ -129,6 +130,7 @@ class _HomeState extends State<Home> {
                       Contents(img: 'assets/plate6.png', name: 'Avocado Bowl', price:'\$26.00'),
                       Contents(img: 'assets/plate5.png', name: 'Berry Bowl', price: '\$19.00'),
                       SizedBox(height: 50.0,),
+
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
@@ -148,6 +150,7 @@ class _HomeState extends State<Home> {
                             ),
                           ), 
                           SizedBox(width: 10.0),
+
                           Container(
                             width: 70.0,
                             height: 70.0,
@@ -159,11 +162,27 @@ class _HomeState extends State<Home> {
                               ),
                               borderRadius: BorderRadius.circular(20.0)
                             ),
-                            child: Icon(Icons.shopping_basket,
-                              color: Colors.black,
-                            ),
+                            child: Center(
+                              child: Stack(fit: StackFit.expand,
+                                children: <Widget>[
+                                  Icon(Icons.shopping_basket,
+                                    color: Colors.black,
+                                  ),
+                                  Positioned(
+                                    child: Text('2',
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    ),
+                                    left: 45.0,
+                                    bottom: 42.0,
+                                  )
+                                ],
+                              ),
+                            )
                           ), 
-                          SizedBox(width: 10.0),                           
+                          SizedBox(width: 10.0),    
+
                           Container(
                             width: 180.0,
                             height: 70.0,
@@ -177,7 +196,7 @@ class _HomeState extends State<Home> {
                                 style: TextStyle(
                                  fontFamily: 'Montserrat',
                                  color: Colors.white,
-                                 fontSize: 15.0,
+                                 fontSize: 18.0,
                                 )
                               ),
                             )
