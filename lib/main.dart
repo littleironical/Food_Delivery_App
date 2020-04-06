@@ -128,10 +128,10 @@ class _HomeState extends State<Home> {
                   child: ListView(
                     children: <Widget>[
                       Padding(padding: EdgeInsets.only(top: 10.0),),
-                      Contents(img: 'assets/plate2.png', name: 'Salmon Bowl', price: '\$24.00'),
-                      Contents(img: 'assets/plate1.png', name: 'Spring Bowl', price: '\$22.00'),
-                      Contents(img: 'assets/plate6.png', name: 'Avocado Bowl', price:'\$26.00'),
-                      Contents(img: 'assets/plate5.png', name: 'Berry Bowl', price: '\$19.00'),
+                      Contents(img: 'assets/plate2.png', name1: 'Salmon', price: '\$24.00'),
+                      Contents(img: 'assets/plate1.png', name1: 'Spring', price: '\$22.00'),
+                      Contents(img: 'assets/plate6.png', name1: 'Avocado', price:'\$26.00'),
+                      Contents(img: 'assets/plate5.png', name1: 'Berry', price: '\$19.00'),
                       SizedBox(height: 60.0,),
 
                       Row(

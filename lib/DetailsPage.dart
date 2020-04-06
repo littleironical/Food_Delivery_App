@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'content(page2).dart';
 
 class DetailsPage extends StatelessWidget {
-DetailsPage({this.img, this.name, this.price});
+DetailsPage({this.img, this.name1, this.price});
   final img;
-  final name;
+  final name1;
   final price;
 
   @override
@@ -77,7 +77,7 @@ DetailsPage({this.img, this.name, this.price});
                           width: 250.0
                         ),
                       ),
-                      Contents(img: img, name: name, price: price),
+                      Contents(img: img, name1: name1, price: price),
                     ],
                   ),
                 ),

@@ -1,34 +1,14 @@
 import 'package:flutter/material.dart';
 
 class Contents extends StatelessWidget {
-Contents({this.img, this.name, this.price});
+Contents({this.img, this.name1, this.price});
   final img;
-  final name;
+  final name1;
+  final name2 = 'Bowl';
   final price;
 
   @override
   Widget build(BuildContext context) {
-
-  // var name1, name2, count=0,i=0;
-  
-  // String name01(){
-  //   for(i=0; i!='\0'; i++){
-  //     if(name[i]==' ') break;
-  //     else {
-  //       count++;
-  //       name1[i] = name[i];
-  //     }   
-  //   }
-  //   return name1;
-  // }
-  // String name02(){
-  //   for(i=count+1; i!='\0'; i++){
-  //     if(name[i]==' ') break;
-  //     else name2[i] = name[i]; 
-  //   }
-  //   return name2;
-  // }
-
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: Column(
@@ -38,7 +18,7 @@ Contents({this.img, this.name, this.price});
             padding: const EdgeInsets.only(left: 35.0, right: 35.0),
             child: Row(
               children: <Widget>[
-                new Text('Avocadro',
+                new Text(name1,
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.bold,
@@ -47,7 +27,7 @@ Contents({this.img, this.name, this.price});
                   ),
                 ),
                 SizedBox(width: 10.0),
-                new Text('Bowl',
+                new Text(name2,
                   style: TextStyle(
                      fontFamily: 'Montserrat',
                      fontWeight: FontWeight.w300,

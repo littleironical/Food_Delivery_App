@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenge/DetailsPage.dart';
 
 class Contents extends StatelessWidget {
-Contents({this.img, this.name, this.price});
+Contents({this.img, this.name1, this.price});
   final img;
-  final name;
+  final name1;
+  final name2 = 'Bowl';
   final price;
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ Contents({this.img, this.name, this.price});
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:[
-                    Text(name,
+                    Text(name1+' '+name2,
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 20.0,
@@ -50,7 +51,7 @@ Contents({this.img, this.name, this.price});
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.push(context, new MaterialPageRoute(builder: (context) => new DetailsPage(img: img, name: name, price: price,) ));
+              Navigator.push(context, new MaterialPageRoute(builder: (context) => new DetailsPage(img: img, name1: name1, price: price,) ));
             },
           ),
         ],
