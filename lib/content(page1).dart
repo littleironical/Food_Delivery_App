@@ -40,7 +40,7 @@ Contents({this.img, this.name1, this.price});
                         fontFamily: 'Montserrat',
                         fontSize: 18.0,
                         fontWeight: FontWeight.w500,
-                        color: Colors.grey
+                        color: Colors.black45
                       )
                     )
                   ]

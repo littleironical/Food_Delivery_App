@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge/FoodDetails.dart';
 
 class Contents extends StatelessWidget {
 Contents({this.img, this.name1, this.price});
@@ -103,96 +104,20 @@ Contents({this.img, this.name1, this.price});
           ),
           SizedBox(height: 55.0),
 
-          Padding(
+          Container(
+            height: 190.0,
             padding: const EdgeInsets.only(left: 20.0),
-            child: Row(
+            child: ListView(
+              scrollDirection: Axis.horizontal,
               children: <Widget>[
-                Container(
-                  width: 120.0,
-                  height: 190.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
-                      style: BorderStyle.solid,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(30.0),
-                    color: Colors.white,
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      children: <Widget>[
-                        Text('WEIGHT',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.grey,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ), 
+                FoodDetails(title: 'WEIGHT',number: '300',protein: 'G', color: Color(0xFF7A9BEE),),
                 SizedBox(width: 20.0),
-
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      children: <Widget>[
-                        Text('CALORIES',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.grey,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  width: 120.0,
-                  height: 190.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
-                      style: BorderStyle.solid,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(30.0)
-                  ),
-                ), 
+                FoodDetails(title: 'CALORIES', number: '267', protein: 'CAL', color: Colors.white,),
                 SizedBox(width: 20.0),
-
-                Container(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 20.0),
-                    child: Column(
-                      children: <Widget>[
-                        Text('VITAMINS',
-                          style: TextStyle(
-                            fontFamily: 'Montserrat',
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.grey,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                  width: 120.0,
-                  height: 190.0,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey,
-                      style: BorderStyle.solid,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(30.0)
-                  ),
-                ), 
+                FoodDetails(title: 'VITAMINS', number: 'A, B6', protein: 'VIT', color: Colors.white,),
+                SizedBox(width: 20.0),
+                FoodDetails(title: 'AVAIL', number: 'NO', protein: 'AV', color: Colors.white,),
+                SizedBox(width: 20.0),
               ],
             ),
           ),
@@ -216,7 +141,7 @@ Contents({this.img, this.name1, this.price});
                 ),
               ),
               child: Center(
-                child: Text(price,
+                child: Text('\$52.00',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white,
