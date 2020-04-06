@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'content(page2).dart';
+
 class DetailsPage extends StatelessWidget {
 DetailsPage({this.img, this.name, this.price});
   final img;
@@ -62,7 +64,7 @@ DetailsPage({this.img, this.name, this.price});
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(50.0), topRight: Radius.circular(50.0))
                   ),
                   child: new Stack(
-                    fit: StackFit.loose,
+                    fit: StackFit.expand,
                     alignment: Alignment.bottomCenter,
                     overflow: Overflow.visible,
                     children: <Widget>[
@@ -74,7 +76,8 @@ DetailsPage({this.img, this.name, this.price});
                           height: 250.0,
                           width: 250.0
                         ),
-                      )
+                      ),
+                      Contents(img: img, name: name, price: price),
                     ],
                   ),
                 ),
