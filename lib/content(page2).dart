@@ -81,15 +81,17 @@ Contents({this.img, this.name, this.price});
                     borderRadius: BorderRadius.all(Radius.circular(20.0)),
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
                       IconButton(
-                        icon: Icon(Icons.add,
+                        icon: Icon(Icons.remove,
                           color: Colors.white,
                         ), 
                         onPressed: () {},
                       ),
+                      SizedBox(width: 8.0),
+
                       Text('2',
                         style: TextStyle(
                           fontFamily: 'Montserrat',
@@ -97,10 +99,21 @@ Contents({this.img, this.name, this.price});
                           color: Colors.white,
                         ),
                       ),
-                      IconButton(
-                        color: Colors.white,
-                        icon: Icon(Icons.add), 
-                        onPressed: () {},
+                      SizedBox(width: 20.0),
+
+                      Container(
+                        height: 25.0,
+                        width: 25.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(7.0),
+                          color: Colors.white
+                        ),
+                        child: Center(
+                          child: Icon(Icons.add,
+                            color: Color(0xFF7A9BEE),
+                            size: 20.0,
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -109,6 +122,7 @@ Contents({this.img, this.name, this.price});
             ),
           ),
           SizedBox(height: 55.0),
+
           Padding(
             padding: const EdgeInsets.only(left: 20.0),
             child: Row(
@@ -117,12 +131,48 @@ Contents({this.img, this.name, this.price});
                   width: 120.0,
                   height: 190.0,
                   decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey,
+                      style: BorderStyle.solid,
+                      width: 2.0,
+                    ),
                     borderRadius: BorderRadius.circular(30.0),
-                    color: Color(0xFF7A9BEE),
+                    color: Colors.white,
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text('WEIGHT',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ), 
                 SizedBox(width: 20.0),
+
                 Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text('CALORIES',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   width: 120.0,
                   height: 190.0,
                   decoration: BoxDecoration(
@@ -135,7 +185,23 @@ Contents({this.img, this.name, this.price});
                   ),
                 ), 
                 SizedBox(width: 20.0),
+
                 Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text('VITAMINS',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   width: 120.0,
                   height: 190.0,
                   decoration: BoxDecoration(
