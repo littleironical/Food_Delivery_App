@@ -10,6 +10,7 @@ Contents({this.img, this.name1, this.price});
 
   @override
   Widget build(BuildContext context) {
+    var total = price*2;
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: Column(
@@ -141,7 +142,7 @@ Contents({this.img, this.name1, this.price});
                 ),
               ),
               child: Center(
-                child: Text('\$52.00',
+                child: Text(total,
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white,
