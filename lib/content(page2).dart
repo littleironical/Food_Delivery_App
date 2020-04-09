@@ -10,7 +10,6 @@ Contents({this.img, this.name1, this.price});
 
   @override
   Widget build(BuildContext context) {
-    var total = price*2;
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: Column(
@@ -107,18 +106,13 @@ Contents({this.img, this.name1, this.price});
 
           Container(
             height: 190.0,
-            padding: const EdgeInsets.only(left: 20.0),
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
                 FoodDetails(title: 'WEIGHT',number: '300',protein: 'G', color: Color(0xFF7A9BEE),),
-                SizedBox(width: 20.0),
                 FoodDetails(title: 'CALORIES', number: '267', protein: 'CAL', color: Colors.white,),
-                SizedBox(width: 20.0),
                 FoodDetails(title: 'VITAMINS', number: 'A, B6', protein: 'VIT', color: Colors.white,),
-                SizedBox(width: 20.0),
                 FoodDetails(title: 'AVAIL', number: 'NO', protein: 'AV', color: Colors.white,),
-                SizedBox(width: 20.0),
               ],
             ),
           ),
@@ -142,7 +136,7 @@ Contents({this.img, this.name1, this.price});
                 ),
               ),
               child: Center(
-                child: Text(total,
+                child: Text(price,
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white,

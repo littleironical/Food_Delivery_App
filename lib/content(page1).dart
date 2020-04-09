@@ -7,6 +7,7 @@ Contents({this.img, this.name1, this.price});
   final name1;
   final name2 = 'Bowl';
   final price;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,9 +25,10 @@ Contents({this.img, this.name1, this.price});
                   width: 95.0
                 ),
                 SizedBox(width: 14.0),
+
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:[
+                  children: <Widget>[
                     Text(name1+' '+name2,
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -35,6 +37,7 @@ Contents({this.img, this.name1, this.price});
                       )
                     ),
                     SizedBox(height: 5.0,),
+
                     Text(price,
                       style: TextStyle(
                         fontFamily: 'Montserrat',
@@ -48,6 +51,7 @@ Contents({this.img, this.name1, this.price});
               ]
             )
           ),
+
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
