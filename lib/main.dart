@@ -125,7 +125,7 @@ class _HomeState extends State<Home> {
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0))
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 0.0),
+                    padding: const EdgeInsets.only(top: 22.0),
                     child: ListView(
                       children: <Widget>[
                         Contents(img: 'assets/plate2.png', name1: 'Salmon', price: 24),
