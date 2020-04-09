@@ -124,88 +124,93 @@ class _HomeState extends State<Home> {
                     color: Colors.white, 
                     borderRadius: BorderRadius.only(topLeft: Radius.circular(100.0))
                   ),
-                  child: ListView(
-                    children: <Widget>[
-                      Padding(padding: EdgeInsets.only(top: 10.0),),
-                      Contents(img: 'assets/plate2.png', name1: 'Salmon', price: '\$24.00'),
-                      Contents(img: 'assets/plate1.png', name1: 'Spring', price: '\$22.00'),
-                      Contents(img: 'assets/plate6.png', name1: 'Avocado', price: '\$26.00'),
-                      Contents(img: 'assets/plate5.png', name1: 'Berry', price: '\$19.00'),
-                      SizedBox(height: 60.0,),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 0.0),
+                    child: ListView(
+                      children: <Widget>[
+                        Contents(img: 'assets/plate2.png', name1: 'Salmon', price: 24),
+                        SizedBox(height: 20.0),
+                        Contents(img: 'assets/plate1.png', name1: 'Spring', price: 22),
+                        SizedBox(height: 20.0),
+                        Contents(img: 'assets/plate6.png', name1: 'Avocado', price: 26),
+                        SizedBox(height: 20.0),
+                        Contents(img: 'assets/plate5.png', name1: 'Berry', price: 19),
+                        SizedBox(height: 60.0,),
 
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Container(
-                            width: 70.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
-                                style: BorderStyle.solid,
-                                width: 2.0,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            Container(
+                              width: 70.0,
+                              height: 70.0,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                  style: BorderStyle.solid,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0)
                               ),
-                              borderRadius: BorderRadius.circular(20.0)
-                            ),
-                            child: Icon(Icons.search,
-                              color: Colors.black,
-                            ),
-                          ), 
-                          SizedBox(width: 10.0),
+                              child: Icon(Icons.search,
+                                color: Colors.black,
+                              ),
+                            ), 
+                            SizedBox(width: 10.0),
 
-                          Container(
-                            width: 70.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.grey,
-                                style: BorderStyle.solid,
-                                width: 2.0,
+                            Container(
+                              width: 70.0,
+                              height: 70.0,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey,
+                                  style: BorderStyle.solid,
+                                  width: 2.0,
+                                ),
+                                borderRadius: BorderRadius.circular(20.0)
                               ),
-                              borderRadius: BorderRadius.circular(20.0)
-                            ),
-                            child: Center(
-                              child: Stack(fit: StackFit.expand,
-                                children: <Widget>[
-                                  Icon(Icons.shopping_basket,
-                                    color: Colors.black,
-                                  ),
-                                  Positioned(
-                                    child: Text('2',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold
-                                      ),
+                              child: Center(
+                                child: Stack(fit: StackFit.expand,
+                                  children: <Widget>[
+                                    Icon(Icons.shopping_basket,
+                                      color: Colors.black,
                                     ),
-                                    left: 45.0,
-                                    bottom: 42.0,
-                                  )
-                                ],
-                              ),
-                            )
-                          ), 
-                          SizedBox(width: 10.0),    
+                                    Positioned(
+                                      child: Text('2',
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold
+                                        ),
+                                      ),
+                                      left: 45.0,
+                                      bottom: 42.0,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ), 
+                            SizedBox(width: 10.0),    
 
-                          Container(
-                            width: 180.0,
-                            height: 70.0,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20.0),
-                              color: Colors.black
-                            ),
-                            child: Center(
-                              child: Text('Checkout',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                 fontFamily: 'Montserrat',
-                                 color: Colors.white,
-                                 fontSize: 18.0,
-                                )
+                            Container(
+                              width: 180.0,
+                              height: 70.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20.0),
+                                color: Colors.black
                               ),
-                            )
-                          ) 
-                        ],
-                      ),
-                    ], 
+                              child: Center(
+                                child: Text('Checkout',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                   fontFamily: 'Montserrat',
+                                   color: Colors.white,
+                                   fontSize: 18.0,
+                                  )
+                                ),
+                              )
+                            ) 
+                          ],
+                        ),
+                      ], 
+                    ),
                   ),
                 ),
               )

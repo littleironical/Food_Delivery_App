@@ -10,6 +10,7 @@ Contents({this.img, this.name1, this.price});
 
   @override
   Widget build(BuildContext context) {
+    var total = price*2;
     return Padding(
       padding: EdgeInsets.only(top: 20.0),
       child: Column(
@@ -40,13 +41,14 @@ Contents({this.img, this.name1, this.price});
             ),
           ),
           SizedBox(height: 30.0),
+
           Padding(
             padding: const EdgeInsets.only(left: 35.0, right: 35.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
-                Text(price,
+                Text('\$$price.00',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     fontSize: 25.0,
@@ -109,7 +111,7 @@ Contents({this.img, this.name1, this.price});
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
-                FoodDetails(title: 'WEIGHT',number: '300',protein: 'G', color: Color(0xFF7A9BEE),),
+                FoodDetails(title: 'WEIGHT', number: '300', protein: 'G', color: Color(0xFF7A9BEE),),
                 FoodDetails(title: 'CALORIES', number: '267', protein: 'CAL', color: Colors.white,),
                 FoodDetails(title: 'VITAMINS', number: 'A, B6', protein: 'VIT', color: Colors.white,),
                 FoodDetails(title: 'AVAIL', number: 'NO', protein: 'AV', color: Colors.white,),
@@ -136,7 +138,7 @@ Contents({this.img, this.name1, this.price});
                 ),
               ),
               child: Center(
-                child: Text(price,
+                child: Text('\$$total.00',
                   style: TextStyle(
                     fontFamily: 'Montserrat',
                     color: Colors.white,

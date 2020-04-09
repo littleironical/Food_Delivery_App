@@ -11,7 +11,7 @@ Contents({this.img, this.name1, this.price});
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 35.0, right: 35.0, top: 20.0),
+      padding: EdgeInsets.only(left: 35.0, right: 35.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -38,7 +38,7 @@ Contents({this.img, this.name1, this.price});
                     ),
                     SizedBox(height: 5.0,),
 
-                    Text(price,
+                    Text('\$$price.00',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontSize: 18.0,
