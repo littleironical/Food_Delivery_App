@@ -1,4 +1,4 @@
-# ui_challenge
+# Food_Delivery_App
 
 ## I'm going to start doing the UI Challenge. In which i will select a random application UI(not the easy one) and try to make it in my own style. 
 
